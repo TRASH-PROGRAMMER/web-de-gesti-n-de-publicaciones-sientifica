@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Catálogo de Publicaciones</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="image/favicon uleam.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="container">
+      <header>
+        <h1>Catálogo de Publicaciones Científicas</h1>
+        <nav>
+          <a href="login.html">Iniciar Sesión</a> |
+          <a href="register.html">Registrarse</a>
+        </nav>
+      </header>
+      <section>
+        <div class="search-container">
+        <input type="text" id="search" placeholder="Buscar por título o autor" onkeyup="buscarPublicaciones()" />
+        <button type="button" class="button-search">buscar</button>
+      </div>
+      </section>
+    <section> 
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Autores</th>
+            <th>Año</th>
+            <th>Tipo de Publicación</th>
+            <th>DOI</th>
+            <th>ISBN</th>
+             <th>Archivo</th>
+             <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="catalogo-publicaciones">
+          <!-- Las publicaciones se mostrarán aquí -->
+        </tbody>
+      </table>
+     </section>
+     <section>
+      <div class="pagination">
+        <button id="prevPage" >Anterior</button>
+        <span id="pageInfo">Página 1 de 1</span>
+        <button id="nextPage" >Siguiente</button>
+      </div>
+    </div>
+  </section>
+      <footer class="footer">
+      <p>Universidad Laica Eloy Alfaro de Manabí</p>
+      <p>&copy; 2025 ULEAM - Todos los derechos reservados</p>
+      <p>Desarrollado por: <a href="https://github.com/TRASH-PROGRAMMER">TRASHPROGRAMMER</a></p>
+    </footer>
+  </div>
+  <script src="scripts/catalo.js"></script>
+</body>
+</html>
